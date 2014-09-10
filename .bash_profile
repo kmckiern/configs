@@ -32,10 +32,13 @@ alias scripts="cd $DB/scripts"
 alias class="cd $DB/class/f14"
 alias ta="cd $DB/class/ta"
 
+alias ipn="ipython notebook --pylab inline"
+
 ## Shortcuts for commonly performed tasks.
 alias bp="vi $BP" 
 alias sbp=". $BP"
 alias rlog="vi $RLOG/rlog.txt"
+alias rdir="cd $RLOG"
 alias not="ssh -Y kmckiern@not0rious.stanford.edu"
 alias vsp="ssh -Y kmckiern@vsp-compute-01.stanford.edu"
 alias cert="ssh -Y kmckiern@certainty-d.stanford.edu"
