@@ -47,6 +47,8 @@ alias card="ssh -Y kmckiern@cardinal.stanford.edu"
 alias corn="ssh -Y kmckiern@corn.stanford.edu"
 alias bx3="ssh -Y kmckiern@biox3.stanford.edu"
 alias titan="ssh -Y kmckiern@titan.ccs.ornl.gov"
+alias mtitan="ssh -Y mlawrenz@titan.ccs.ornl.gov"
+alias pbc="pwd | tr -d '\n' | pbcopy"
 
 ## Colors.
 export CLICOLOR=1
