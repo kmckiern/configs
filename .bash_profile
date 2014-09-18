@@ -49,6 +49,7 @@ alias bx3="ssh -Y kmckiern@biox3.stanford.edu"
 alias titan="ssh -Y kmckiern@titan.ccs.ornl.gov"
 alias mtitan="ssh -Y mlawrenz@titan.ccs.ornl.gov"
 alias pbc="pwd | tr -d '\n' | pbcopy"
+alias vj1="ssh -Y server@vijay-1.stanford.edu"
 
 ## Colors.
 export CLICOLOR=1
