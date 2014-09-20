@@ -34,6 +34,21 @@ alias ta="cd $DB/class/ta"
 
 alias ipn="ipython notebook --pylab inline"
 
+# why is this not a standard command on os x?
+# arg 1: current name element 
+# arg 2: replacement name element
+# arg 3 to end: file(s) to apply replacement to.
+f() {
+    ARGS=( ${@} )
+    FLZ=( "${ARGS[@]:2}" )
+    for i in "${FLZ[@]}"; do
+        RNM=$(echo $i | sed "s/$1/$2/g");
+        cp $i $RNM;
+        mv $i i-$i; 
+    done
+}
+
+
 ## Shortcuts for commonly performed tasks.
 alias bp="vi $BP" 
 alias sbp=". $BP"
