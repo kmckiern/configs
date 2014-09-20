@@ -42,12 +42,19 @@ rnm() {
     ARGS=( ${@} )
     FLZ=( "${ARGS[@]:2}" )
     for i in "${FLZ[@]}"; do
-        RNM=$(echo $i | sed "s/$1/$2/g");
-        cp $i $RNM;
-        mv $i i-$i; 
+        MATCH=${1:-‘’}
+        REPLACE=${2:-‘NULL’}
+        [[ -z $MATCH ]] && return 2 || :
+            RNM=$(echo $i | sed "s/$MATCH/$REPLACE/g");
+            cp $i $RNM;
+            mv $i i-$i; 
     done
 }
 
+# for parsing
+pref() {
+    echo $(echo $1 | awk -F '.' '{print $1}');
+}
 
 ## Shortcuts for commonly performed tasks.
 alias bp="vi $BP" 
