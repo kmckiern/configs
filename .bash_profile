@@ -38,7 +38,7 @@ alias ipn="ipython notebook --pylab inline"
 # arg 1: current name element 
 # arg 2: replacement name element
 # arg 3 to end: file(s) to apply replacement to.
-f() {
+rnm() {
     ARGS=( ${@} )
     FLZ=( "${ARGS[@]:2}" )
     for i in "${FLZ[@]}"; do
