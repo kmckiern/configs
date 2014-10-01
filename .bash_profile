@@ -7,6 +7,8 @@ export PATH=$PYPATH:$HOMEBREW:$PATH
 ## CL config.
 # Prevent ^C from being echoed to the terminal when Ctrl+C is pressed.
 stty -ctlecho
+# forward search in bash
+stty -ixon
 # CL vi
 set -o vi
 # Start VMD via CL
