@@ -11,6 +11,7 @@ alias brc='vi ~/.bashrc'
 alias sbrc='. ~/.bashrc'
 alias ll='ls -ltrh'
 alias la='ls -ltrha'
+alias kj='qstat | grep kmck | awk -F '.' '{print $1}' | xargs qdel'
 
 alias gromostop="cd /home/kmckiern/opt/gromacs-4.6.2/share/gromacs/top/"
 
