@@ -36,6 +36,7 @@ alias mtitan="ssh -Y mlawrenz@titan.ccs.ornl.gov"
 alias pbc="pwd | tr -d '\n' | pbcopy"
 alias vj1="ssh -Y server@vijay-1.stanford.edu"
 alias ipn="ipython notebook --pylab inline"
+alias rs="rsync -avzh"
 
 # Start VMD via CL
 alias vmd="/Applications/VMD\ 1.9.1.app/Contents/MacOS/startup.command"
