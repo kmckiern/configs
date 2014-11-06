@@ -37,7 +37,8 @@ alias pbc="pwd | tr -d '\n' | pbcopy"
 alias vj1="ssh -Y server@vijay-1.stanford.edu"
 alias ipn="ipython notebook --pylab inline"
 alias rs="rsync -avzh"
-alias bkrs="ionice -c3 rsync -avzh"
+# throttle rsync on both sides of a larger transfer
+alias bkrs="ionice -c3 rsync --rsync-path=\"nice -n19 rsync\" -avzh"
 
 # Start VMD via CL
 alias vmd="/Applications/VMD\ 1.9.1.app/Contents/MacOS/startup.command"
