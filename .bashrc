@@ -3,17 +3,9 @@ export PATH=$CONDA:$HOME/local/pcre-8.34/bin:$HOME/local/swig-2.0.11/bin:/usr/lo
 export LD_LIBRARY_PATH=$HOME/local/pcre-8.34/lib:$HOME/local/cuda/lib64:/home/kmckiern/local/openmm/lib:$LD_LIBRARY_PATH
 export OPENMM_PLUGIN_DIR=/home/kmckiern/openmm/lib/plugins
 
-alias ~='cd ~'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias .-='cd -'
-alias brc='vi ~/.bashrc'
-alias sbrc='. ~/.bashrc'
-alias ll='ls -ltrh'
-alias la='ls -ltrha'
-alias kj="qstat | grep kmck | awk -F '.' '{print \$1}' | xargs qdel"
-
-alias gromostop="cd /home/kmckiern/opt/gromacs-4.6.2/share/gromacs/top/"
+if [ -f ~/.aliases ]; then
+    source ~/.aliases
+fi
 
 # Prevent ^C from being echoed to the terminal when Ctrl+C is pressed.
 stty -ctlecho
