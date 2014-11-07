@@ -1,13 +1,13 @@
-# Handy bash shortcuts
-alias ll='ls -lhtr'
-alias la='ls -latrh'
-alias ugh='sudo $(history -p !-1)'
-alias ~='cd ~'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
-alias .-='cd -'
+## Handy bash shortcuts
+alias ll="ls -lhtr"
+alias la="ls -latrh"
+alias ugh="sudo $(history -p !-1)"
+alias ~="cd ~"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias .-="cd -"
 
 ## Shortcuts for frequently visited paths.
 BP="~/.bash_profile"
@@ -40,5 +40,5 @@ alias rs="rsync -avzh"
 # throttle rsync on both sides of a larger transfer
 alias bkrs="nice -n19 rsync --rsync-path=\"nice -n19 rsync\" -avzh"
 
-# Start VMD via CL
+## Start VMD via CL
 alias vmd="/Applications/VMD\ 1.9.1.app/Contents/MacOS/startup.command"
