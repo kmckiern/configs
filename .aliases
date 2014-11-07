@@ -11,6 +11,7 @@ alias .-="cd -"
 
 ## Shortcuts for frequently visited paths.
 BP="~/.bash_profile"
+BRC="~/.bashrc"
 DB="$HOME/Dropbox"
 RLOG="$DB/notes/current"
 alias lipid="cd $DB/lipid"
@@ -22,6 +23,8 @@ alias ta="cd $DB/class/ta"
 ## Shortcuts for commonly performed tasks.
 alias bp="vi $BP" 
 alias sbp=". $BP"
+alias brc="vi $BP" 
+alias sbrc=". $BP"
 alias rlog="vi $RLOG/rlog.txt"
 alias rdir="cd $RLOG"
 alias not="ssh -Y kmckiern@not0rious.stanford.edu"
