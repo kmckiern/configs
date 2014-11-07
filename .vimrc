@@ -55,3 +55,6 @@ if exists("+undofile")
   set undodir+=~/.vim/undo//
   set undofile
 endif
+
+" show cursor r,c
+set ruler
