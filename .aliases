@@ -45,6 +45,15 @@ alias ipn="ipython notebook --pylab inline"
 alias rs="rsync -avzh"
 # throttle rsync on both sides of a larger transfer
 alias bkrs="nice -n19 rsync --rsync-path=\"nice -n19 rsync\" -avzh"
+alias sq="squeue -l"
 
 ## Start VMD via CL
 alias vmd="/Applications/VMD\ 1.9.1.app/Contents/MacOS/startup.command"
+
+## hmMMMmmmMMm
+# cdc() {
+#   for fn in "$@"; do
+#   source-highlight --out-format=esc -o STDOUT -i $fn 2>/dev/null || /bin/cat $fn;
+#   done
+# }
+# alias cat='cdc'
