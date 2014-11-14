@@ -39,20 +39,20 @@ alias titan="ssh -Y kmckiern@titan.ccs.ornl.gov"
 alias mtitan="ssh -Y mlawrenz@titan.ccs.ornl.gov"
 alias icme="ssh -Y kmckiern@icme-gpu1.stanford.edu"
 alias sher="ssh -Y kmckiern@sherlock.stanford.edu"
+alias vj1="ssh -Y server@vijay-1.stanford.edu"
 # os x
 alias pbc="pwd | tr -d '\n' | pbcopy"
 # ubuntu
 alias lpbc="pwd | xclip"
 alias cb="xclip -o"
-alias vj1="ssh -Y server@vijay-1.stanford.edu"
-alias ipn="ipython notebook --pylab inline"
 alias rs="rsync -avzh"
 # throttle rsync on both sides of a larger transfer
 alias bkrs="nice -n19 rsync --rsync-path=\"nice -n19 rsync\" -avzh"
 alias sq="squeue -l"
 alias grep="grep -i"
 
-## Start VMD via CL
+## Start programs via CL
+alias ipn="ipython notebook --pylab inline"
 alias vmd="/Applications/VMD\ 1.9.1.app/Contents/MacOS/startup.command"
 
 ## hmMMMmmmMMm
