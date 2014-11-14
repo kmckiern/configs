@@ -38,11 +38,8 @@ alias bx3="ssh -Y kmckiern@biox3.stanford.edu"
 alias titan="ssh -Y kmckiern@titan.ccs.ornl.gov"
 alias mtitan="ssh -Y mlawrenz@titan.ccs.ornl.gov"
 alias icme="ssh -Y kmckiern@icme-gpu1.stanford.edu"
-<<<<<<< HEAD
-# os x
-=======
 alias sher="ssh -Y kmckiern@sherlock.stanford.edu"
->>>>>>> e2aef1c541c528f84aa2a5a47068df11f56d6778
+# os x
 alias pbc="pwd | tr -d '\n' | pbcopy"
 # ubuntu
 alias lpbc="pwd | xclip"
