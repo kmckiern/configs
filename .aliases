@@ -1,7 +1,6 @@
 ## Handy bash shortcuts
 alias ll="ls -lhtr"
 alias la="ls -latrh"
-alias ugh="sudo $(history -p !-1)"
 alias ~="cd ~"
 alias ..="cd .."
 alias ...="cd ../.."
