@@ -3,6 +3,7 @@ PYPATH="/anaconda/bin"
 export PYTHONPATH="$PYPATH:$PYTHONPATH"
 HOMEBREW="/usr/local/bin:/usr/local/sbin"
 export PATH=$PYPATH:$HOMEBREW:$PATH
+#export PATH=$HOMEBREW:$PATH
 
 ## CL config.
 # Prevent ^C from being echoed to the terminal when Ctrl+C is pressed.
@@ -24,7 +25,7 @@ rnm() {
         REPLACE=${2:-‘NULL’}
         [[ -z $MATCH ]] && return 2 || :
             RNM=$(echo $i | sed "s/$MATCH/$REPLACE/g");
-            cp $i $RNM;
+            cp -r $i $RNM;
             mv $i i-$i; 
     done
 }
