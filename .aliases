@@ -19,6 +19,7 @@ alias opioid="cd $DB/opioid"
 alias scripts="cd $DB/scripts"
 alias class="cd $DB/class/f14"
 alias ta="cd $DB/class/ta"
+alias syspy="export PATH=$HOMEBREW:$PATH"
 
 ## Shortcuts for commonly performed tasks.
 alias bp="vi $BP" 
