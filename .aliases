@@ -1,5 +1,6 @@
 ## Handy bash shortcuts
 alias ll="ls -lhtr"
+alias lst="ls | sort"
 alias la="ls -latrh"
 alias ~="cd ~"
 alias ..="cd .."
