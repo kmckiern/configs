@@ -8,6 +8,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias .-="cd -"
+alias ip="ifconfig | grep inet"
 
 ## Shortcuts for frequently visited paths.
 BP="~/.bash_profile"
