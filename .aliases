@@ -58,6 +58,7 @@ alias jerb="PBSCheck.py nodes | grep kmck"
 ## Start programs via CL
 alias ipn="ipython notebook --pylab inline"
 alias vmd="/Applications/VMD\ 1.9.1.app/Contents/MacOS/startup.command"
+alias scan_hd="sudo /Applications/Space\ Gremlin\ Pro.app/Contents/MacOS/Space\ Gremlin\ Pro"
 
 ## hmMMMmmmMMm
 # cdc() {
