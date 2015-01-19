@@ -1,10 +1,12 @@
-export CONDA=/home/kmckiern/anaconda/bin
-export PATH=$CONDA:$HOME/local/pcre-8.34/bin:$HOME/local/swig-2.0.11/bin:/usr/local/cuda/bin:$HOME/opt/openmm/bin:$HOME/opt/gromacs-4.6.2/bin:$HOME/local/bin:$HOME/opt/cctools-4.1.2/bin/:$HOME/temp/dock6/bin/:$PATH
-export LD_LIBRARY_PATH=$HOME/local/pcre-8.34/lib:$HOME/local/cuda/lib64:/home/kmckiern/local/openmm/lib:$LD_LIBRARY_PATH
-export OPENMM_PLUGIN_DIR=/home/kmckiern/openmm/lib/plugins
+export CONDA=$HOME/anaconda/bin
+export PATH=$CONDA:$HOME/local/pcre-8.34/bin:$HOME/local/swig-2.0.11/bin:/usr/local/cuda/bin:$HOME/opt/gromacs-4.6.2/bin:$HOME/local/bin:$HOME/opt/cctools/bin/:$HOME/temp/dock6/bin/:$PATH
 
 if [ -f ~/.aliases ]; then
     source ~/.aliases
+fi
+
+if [ -f ~/.bash_profile ]; then
+    . ~/.bash_profile
 fi
 
 # Prevent ^C from being echoed to the terminal when Ctrl+C is pressed.

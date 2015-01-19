@@ -1,13 +1,14 @@
 ## Handy bash shortcuts
 alias ll="ls -lhtr"
+alias lst="ls | sort"
 alias la="ls -latrh"
-alias ugh="sudo $(history -p !-1)"
 alias ~="cd ~"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias .-="cd -"
+alias ip="ifconfig | grep inet"
 
 ## Shortcuts for frequently visited paths.
 BP="~/.bash_profile"
@@ -20,6 +21,7 @@ alias opioid="cd $DB/opioid"
 alias scripts="cd $DB/scripts"
 alias class="cd $DB/class/f14"
 alias ta="cd $DB/class/ta"
+alias syspy="export PATH=$HOMEBREW:$PATH"
 
 ## Shortcuts for commonly performed tasks.
 alias bp="vi $BP" 
@@ -38,13 +40,30 @@ alias bx3="ssh -Y kmckiern@biox3.stanford.edu"
 alias titan="ssh -Y kmckiern@titan.ccs.ornl.gov"
 alias mtitan="ssh -Y mlawrenz@titan.ccs.ornl.gov"
 alias icme="ssh -Y kmckiern@icme-gpu1.stanford.edu"
-alias pbc="pwd | tr -d '\n' | pbcopy"
+alias sher="ssh -Y kmckiern@sherlock.stanford.edu"
 alias vj1="ssh -Y server@vijay-1.stanford.edu"
-alias ipn="ipython notebook --pylab inline"
+# os x
+alias pbc="pwd | tr -d '\n' | pbcopy"
+# ubuntu
+alias lpbc="pwd | xclip"
+alias cb="xclip -o"
 alias rs="rsync -avzh"
 # throttle rsync on both sides of a larger transfer
 alias bkrs="nice -n19 rsync --rsync-path=\"nice -n19 rsync\" -avzh"
 alias sq="squeue -l"
+alias grep="grep -i"
+alias cln="rm *.sh.{e,o}*"
+alias jerb="PBSCheck.py nodes | grep kmck"
 
-## Start VMD via CL
+## Start programs via CL
+alias ipn="ipython notebook --pylab inline"
 alias vmd="/Applications/VMD\ 1.9.1.app/Contents/MacOS/startup.command"
+alias scan_hd="sudo /Applications/Space\ Gremlin\ Pro.app/Contents/MacOS/Space\ Gremlin\ Pro"
+
+## hmMMMmmmMMm
+# cdc() {
+#   for fn in "$@"; do
+#   source-highlight --out-format=esc -o STDOUT -i $fn 2>/dev/null || /bin/cat $fn;
+#   done
+# }
+# alias cat='cdc'
