@@ -5,6 +5,10 @@ if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi
 
+if [ -f ~/.functions ]; then
+    source ~/.functions
+fi
+
 if [ -f ~/.bash_profile ]; then
     . ~/.bash_profile
 fi
