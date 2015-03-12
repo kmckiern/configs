@@ -10,7 +10,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias .-="cd -"
-alias ip="ifconfig | grep inet"
+alias grep="grep -i"
 
 ## Shortcuts for frequently visited paths.
 BP="~/.bash_profile"
@@ -23,15 +23,23 @@ alias opioid="cd $DB/opioid"
 alias scripts="cd $DB/scripts"
 alias class="cd $DB/class/f14"
 alias ta="cd $DB/class/ta"
-alias syspy="export PATH=$HOMEBREW:$PATH"
+alias rdir="cd $RLOG"
 
-## Shortcuts for commonly performed tasks.
+## shortcuts for common
 alias bp="vi $BP" 
 alias sbp=". $BP"
 alias brc="vi $BRC" 
 alias sbrc=". $BRC"
+# os x
+alias pbc="pwd | tr -d '\n' | pbcopy"
+# ubuntu
+alias lpbc="pwd | xclip"
+alias syspy="export PATH=$HOMEBREW:$PATH"
+alias cb="xclip -o"
+alias ip="ifconfig | grep inet"
+
 alias rlog="vi $RLOG/rlog.txt"
-alias rdir="cd $RLOG"
+# beep
 alias not="ssh -Y kmckiern@not0rious.stanford.edu"
 alias vsp="ssh -Y kmckiern@vsp-compute-01.stanford.edu"
 alias cert="ssh -Y kmckiern@certainty-d.stanford.edu"
@@ -43,18 +51,13 @@ alias titan="ssh -Y kmckiern@titan.ccs.ornl.gov"
 alias mtitan="ssh -Y mlawrenz@titan.ccs.ornl.gov"
 alias icme="ssh -Y kmckiern@icme-gpu1.stanford.edu"
 alias sher="ssh -Y kmckiern@sherlock.stanford.edu"
-alias vj1="ssh -Y server@vijay-1.stanford.edu"
-# os x
-alias pbc="pwd | tr -d '\n' | pbcopy"
-# ubuntu
-alias lpbc="pwd | xclip"
-alias cb="xclip -o"
+
 alias rs="rsync -avzh"
 # throttle rsync on both sides of a larger transfer
 alias bkrs="nice -n19 rsync --rsync-path=\"nice -n19 rsync\" -avzh"
+
+# queueue
 alias sq="squeue -l"
-alias grep="grep -i"
-alias cln="rm *.sh.{e,o}*"
 alias jerb="PBSCheck.py nodes | grep kmck"
 
 ## Start programs via CL
