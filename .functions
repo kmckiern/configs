@@ -24,3 +24,8 @@ pref() {
 now() {
   echo $(date +"%Y.%m.%d-%H.%M.%S")
 }
+
+del() {
+    ARGS=( ${@} )
+    mv $ARGS ~/.recycle
+}
