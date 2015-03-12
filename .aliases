@@ -56,7 +56,6 @@ alias sq="squeue -l"
 alias grep="grep -i"
 alias cln="rm *.sh.{e,o}*"
 alias jerb="PBSCheck.py nodes | grep kmck"
-alias fbclean="rm *.{tmp,out,err}"
 
 ## Start programs via CL
 alias ipn="ipython notebook --pylab inline"
