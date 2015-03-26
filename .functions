@@ -29,3 +29,8 @@ del() {
     ARGS=( ${@} )
     mv $ARGS ~/.recycle
 }
+
+fnd() {
+    ARGS=( ${@} )
+    find . -iname "*$ARGS*"
+}
