@@ -34,3 +34,8 @@ fnd() {
     ARGS=( ${@} )
     find . -iname "*$ARGS*"
 }
+
+comp_tex() {
+    ARGS=$1
+    latex ${ARGS}.tex && dvips -P pdf ${ARGS}.dvi && ps2pdf ${ARGS}.ps
+}
