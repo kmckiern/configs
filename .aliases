@@ -1,8 +1,7 @@
 ## Handy bash shortcuts
 alias ll="ls -lhtr"
-alias lst="ls | sort -V"
 # ALWAYS want natural sort
-alias sort="sort -V"
+# alias sort="sort -V"
 alias la="ls -latrh"
 alias ~="cd ~"
 alias ..="cd .."
