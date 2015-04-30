@@ -1,7 +1,8 @@
 ## Handy bash shortcuts
 alias ll="ls -lhtr"
+alias lst="ls | sort -V"
 # ALWAYS want natural sort
-# alias sort="sort -V"
+alias sort="sort -V"
 alias la="ls -latrh"
 alias ~="cd ~"
 alias ..="cd .."
@@ -45,7 +46,6 @@ alias cert="ssh -Y kmckiern@certainty-d.stanford.edu"
 alias hs="ssh -Y kmckiern@proclus.stanford.edu"
 alias card="ssh -Y kmckiern@cardinal.stanford.edu"
 alias corn="ssh -Y kmckiern@corn.stanford.edu"
-alias rye="ssh -Y kmckiern@rye01.stanford.edu"
 alias bx3="ssh -Y kmckiern@biox3.stanford.edu"
 alias titan="ssh -Y kmckiern@titan.ccs.ornl.gov"
 alias mtitan="ssh -Y mlawrenz@titan.ccs.ornl.gov"
@@ -57,7 +57,7 @@ alias rs="rsync -avzh"
 alias bkrs="nice -n19 rsync --rsync-path=\"nice -n19 rsync\" -avzh"
 
 # queueue
-alias sq="squeue -l"
+alias sq="squeue -l | grep kmck"
 alias jerb="PBSCheck.py nodes | grep kmck"
 
 ## Start programs via CL
