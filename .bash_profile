@@ -1,11 +1,11 @@
-## Env vars.
+## env vars
 PYPATH="/anaconda/bin"
 export PYTHONPATH="$PYPATH:$PYTHONPATH"
 HOMEBREW="/usr/local/bin:/usr/local/sbin"
-export PATH=$PYPATH:$HOMEBREW:$PATH
-#export PATH=$HOMEBREW:$PATH
+CUDA="/Developer/NVIDIA/cuda/bin"
+export PATH=$PYPATH:$HOMEBREW:$CUDA:$PATH
 
-## CL config.
+## cl config
 # Prevent ^C from being echoed to the terminal when Ctrl+C is pressed.
 stty -ctlecho
 # forward search in bash
@@ -13,10 +13,10 @@ stty -ixon
 # CL vi
 set -o vi
 
-## Colors.
+## colors
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
-export GREP_COLOR='01;20'
+export GREP_COLOR='01;31'
 export lscolors=exfxcxdxbxahafabagacad
 RED="\033[1;31m";
 NORM="\033[0;39m";
@@ -32,3 +32,6 @@ fi
 if [ -f ~/.functions ]; then
     source ~/.functions
 fi
+# if [ -f ~/.inputrc ]; then
+#     source ~/.inputrc
+# fi
