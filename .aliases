@@ -11,6 +11,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias .-="cd -"
 alias grep="grep -i"
+alias ubflux="xflux -z 94304"
 
 ## Shortcuts for frequently visited paths.
 BP="~/.bash_profile"
