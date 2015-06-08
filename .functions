@@ -49,5 +49,5 @@ gp() {
 # protein vmd visualization
 pvmd() {
     FILE=$1
-    vmd -e /Users/kerimckiernan/Dropbox/scripts/clc/visual.tcl -args $FILE
+    vmd -e /Users/kerimckiernan/Dropbox/scripts/manip_proteins/visual.tcl -args $FILE
 }
