@@ -53,6 +53,7 @@ alias titan="ssh -Y kmckiern@titan.ccs.ornl.gov"
 alias mtitan="ssh -Y mlawrenz@titan.ccs.ornl.gov"
 alias icme="ssh -Y kmckiern@icme-gpu1.stanford.edu"
 alias sher="ssh -Y kmckiern@sherlock.stanford.edu"
+alias noe="ssh -p 5149 kmckiern@192.168.0.107"
 
 alias rs="rsync -avzh"
 # throttle rsync on both sides of a larger transfer
@@ -63,7 +64,7 @@ alias sq="squeue -l | grep kmck"
 alias jerb="PBSCheck.py nodes | grep kmck"
 
 ## Start programs via CL
-alias ipn="ipython notebook --pylab inline"
+alias ipn="ipython notebook"
 alias vmd="/Applications/VMD\ 1.9.1.app/Contents/MacOS/startup.command"
 alias scan_hd="sudo /Applications/Space\ Gremlin\ Pro.app/Contents/MacOS/Space\ Gremlin\ Pro"
 
