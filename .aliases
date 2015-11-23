@@ -1,8 +1,6 @@
 ## Handy bash shortcuts
 alias ll="ls -lhtr"
 alias lst="ls | sort -V"
-# ALWAYS want natural sort
-alias sort="sort -V"
 alias la="ls -latrh"
 alias ~="cd ~"
 alias ..="cd .."
@@ -18,12 +16,8 @@ BP="~/.bash_profile"
 BRC="~/.bashrc"
 DB="$HOME/Dropbox"
 RLOG="$DB/notes/current"
-MSMBSCRIPTS="$HOME/anaconda/lib/python2.7/site-packages/msmbuilder-2.8.2-py2.7.egg/msmbuilder/scripts"
-alias lipid="cd $DB/lipid"
-alias opioid="cd $DB/opioid"
 alias scripts="cd $DB/scripts"
 alias class="cd $DB/class/f14"
-alias ta="cd $DB/class/ta"
 alias rdir="cd $RLOG"
 
 ## shortcuts for common
@@ -39,6 +33,9 @@ alias syspy="export PATH=$HOMEBREW:$PATH"
 alias cb="xclip -o"
 alias ip="ifconfig | grep inet"
 
+# query network
+alias ntwk="sudo arp-scan --interface=en0 --localnet"
+
 alias rlog="vi $RLOG/rlog.txt"
 # beep
 alias not="ssh -Y kmckiern@not0rious.stanford.edu"
@@ -53,7 +50,6 @@ alias titan="ssh -Y kmckiern@titan.ccs.ornl.gov"
 alias mtitan="ssh -Y mlawrenz@titan.ccs.ornl.gov"
 alias icme="ssh -Y kmckiern@icme-gpu1.stanford.edu"
 alias sher="ssh -Y kmckiern@sherlock.stanford.edu"
-alias noe="ssh -p 5149 kmckiern@192.168.0.107"
 
 alias rs="rsync -avzh"
 # throttle rsync on both sides of a larger transfer
