@@ -32,6 +32,8 @@ alias lpbc="pwd | xclip"
 alias syspy="export PATH=$HOMEBREW:$PATH"
 alias cb="xclip -o"
 alias ip="ifconfig | grep inet"
+alias vm5="amixer -q sset Master 5%-"
+alias vp5="amixer -q sset Master 5%+"
 
 # query network
 alias ntwk="sudo arp-scan --interface=en0 --localnet"
