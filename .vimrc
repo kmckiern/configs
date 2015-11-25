@@ -14,6 +14,13 @@ colo mymoss
 " Python tabs.
 set tabstop=4 shiftwidth=4 expandtab
 
+" Auto indent
+set textwidth=79
+set formatoptions=c,q,r,t    " c    auto-wrap comments w/ text-width
+
+" show cursor r,c
+set ruler
+
 " Below was taken from somewhere on Stackoverflow, I think.
 
 " Save your backups to a less annoying place than the current directory.
@@ -35,9 +42,9 @@ set backup
 if isdirectory($HOME . '/.vim/swap') == 0
   :silent !mkdir -p ~/.vim/swap >/dev/null 2>&1
 endif
-set directory=./.vim-swap//
-set directory+=~/.vim/swap//
-set directory+=~/tmp//
+set directory=./.vim-swap/
+set directory+=~/.vim/swap/
+set directory+=~/tmp/
 set directory+=.
 
 " viminfo stores the the state of your previous editing session
@@ -56,5 +63,3 @@ if exists("+undofile")
   set undofile
 endif
 
-" show cursor r,c
-set ruler
