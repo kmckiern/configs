@@ -14,13 +14,6 @@ colo mymoss
 " Python tabs.
 set tabstop=4 shiftwidth=4 expandtab
 
-" Auto indent
-set textwidth=79
-set formatoptions=c,q,r,t    " c    auto-wrap comments w/ text-width
-
-" show cursor r,c
-set ruler
-
 " Below was taken from somewhere on Stackoverflow, I think.
 
 " Save your backups to a less annoying place than the current directory.
@@ -58,8 +51,18 @@ if exists("+undofile")
   if isdirectory($HOME . '/.vim/undo') == 0
     :silent !mkdir -p ~/.vim/undo > /dev/null 2>&1
   endif
-  set undodir=./.vim-undo//
-  set undodir+=~/.vim/undo//
+  set undodir=./.vim-undo/
+  set undodir+=~/.vim/undo/
   set undofile
 endif
 
+" show cursor r,c
+set ruler
+
+execute pathogen#infect()
+filetype plugin indent on
+
+set textwidth=79
+set formatoptions=c,q,r,t    " c    auto-wrap comments w/ text-width
+
+set pastetoggle=<F10>
