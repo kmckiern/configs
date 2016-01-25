@@ -1,5 +1,5 @@
 export CONDA=$HOME/anaconda/bin
-export PATH=$CONDA:$HOME/local/pcre-8.34/bin:$HOME/local/swig-2.0.11/bin:/usr/local/cuda/bin:$HOME/opt/gromacs-4.6.2/bin:$HOME/local/bin:$HOME/opt/cctools/bin/:$HOME/temp/dock6/bin/:$PATH
+export PATH=$CONDA:$PATH
 
 if [ -f ~/.aliases ]; then
     source ~/.aliases
