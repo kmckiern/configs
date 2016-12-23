@@ -16,8 +16,7 @@ BP="~/.bash_profile"
 BRC="~/.bashrc"
 DB="$HOME/Dropbox"
 RLOG="$DB/Notes/current"
-alias scripts="cd $DB/scripts"
-alias class="cd $DB/class/f14"
+alias scripts="cd $HOME/scripts"
 alias rdir="cd $RLOG"
 
 ## shortcuts for common
@@ -42,14 +41,10 @@ alias rlog="vi $RLOG/rlog.txt"
 # beep
 alias not="ssh -Y kmckiern@not0rious.stanford.edu"
 alias vsp="ssh -Y kmckiern@vsp-compute-01.stanford.edu"
-alias cert="ssh -Y kmckiern@certainty-d.stanford.edu"
-alias hs="ssh -Y kmckiern@proclus.stanford.edu"
 alias card="ssh -Y kmckiern@cardinal.stanford.edu"
 alias corn="ssh -Y kmckiern@corn.stanford.edu"
 alias rye="ssh -Y kmckiern@rye01.stanford.edu"
 alias bx3="ssh -Y kmckiern@biox3.stanford.edu"
-alias titan="ssh -Y kmckiern@titan.ccs.ornl.gov"
-alias icme="ssh -Y kmckiern@icme-gpu1.stanford.edu"
 alias sher="ssh -Y kmckiern@sherlock.stanford.edu"
 alias xs="ssh -Y kmckiern@xstream-login.stanford.edu"
 
@@ -62,14 +57,6 @@ alias sq="squeue -l | grep kmck"
 alias jerb="PBSCheck.py nodes | grep kmck"
 
 ## Start programs via CL
-alias ipn="ipython notebook"
+alias ipn="jupyter notebook"
 alias vmd="/Applications/VMD\ 1.9.1.app/Contents/MacOS/startup.command"
 alias scan_hd="sudo /Applications/Space\ Gremlin\ Pro.app/Contents/MacOS/Space\ Gremlin\ Pro"
-
-## hmMMMmmmMMm
-# cdc() {
-#   for fn in "$@"; do
-#   source-highlight --out-format=esc -o STDOUT -i $fn 2>/dev/null || /bin/cat $fn;
-#   done
-# }
-# alias cat='cdc'
