@@ -9,12 +9,8 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias .-="cd -"
 alias grep="grep -i"
-alias ubflux="xflux -z 94304"
 
 ## Shortcuts for frequently visited paths.
-BP="~/.bash_profile"
-BRC="~/.bashrc"
-DB="$HOME/Dropbox"
 RLOG="$DB/Notes/current"
 alias scripts="cd $HOME/scripts"
 alias rdir="cd $RLOG"
@@ -37,14 +33,8 @@ alias vp5="amixer -q sset Master 5%+"
 # query network
 alias ntwk="sudo arp-scan --interface=en0 --localnet"
 
-alias rlog="vi $RLOG/rlog.txt"
 # beep
-alias not="ssh -Y kmckiern@not0rious.stanford.edu"
 alias vsp="ssh -Y kmckiern@vsp-compute-01.stanford.edu"
-alias card="ssh -Y kmckiern@cardinal.stanford.edu"
-alias corn="ssh -Y kmckiern@corn.stanford.edu"
-alias rye="ssh -Y kmckiern@rye01.stanford.edu"
-alias bx3="ssh -Y kmckiern@biox3.stanford.edu"
 alias sher="ssh -Y kmckiern@sherlock.stanford.edu"
 alias xs="ssh -Y kmckiern@xstream-login.stanford.edu"
 
@@ -57,6 +47,4 @@ alias sq="squeue -l | grep kmck"
 alias jerb="PBSCheck.py nodes | grep kmck"
 
 ## Start programs via CL
-alias ipn="jupyter notebook"
 alias vmd="/Applications/VMD\ 1.9.1.app/Contents/MacOS/startup.command"
-alias scan_hd="sudo /Applications/Space\ Gremlin\ Pro.app/Contents/MacOS/Space\ Gremlin\ Pro"
