@@ -1,4 +1,5 @@
 ## Handy bash shortcuts
+alias ls="ls --color=always"
 alias ll="ls -lhtr"
 alias lst="ls | sort -V"
 alias la="ls -latrh"
@@ -8,7 +9,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias .-="cd -"
-alias grep="grep -i"
+alias grep="grep -i --color=always"
 
 ## Shortcuts for frequently visited paths.
 RLOG="$DB/Notes/current"
@@ -24,7 +25,6 @@ alias sbrc=". $BRC"
 alias pbc="pwd | tr -d '\n' | pbcopy"
 # ubuntu
 alias lpbc="pwd | xclip"
-alias syspy="export PATH=$HOMEBREW:$PATH"
 alias cb="xclip -o"
 alias ip="ifconfig | grep inet"
 alias vm5="amixer -q sset Master 5%-"
