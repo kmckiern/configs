@@ -1,6 +1,8 @@
 export CONDA=$HOME/anaconda/bin
 export PATH=$CONDA:$PATH
 
+source activate p36
+
 if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi
