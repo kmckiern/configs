@@ -1,50 +1,23 @@
-## Handy bash shortcuts
 alias ls="ls --color=always"
 alias ll="ls -lhtr"
-alias lst="ls | sort -V"
 alias la="ls -latrh"
 alias ~="cd ~"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-alias .....="cd ../../../.."
 alias .-="cd -"
 alias grep="grep -i --color=always"
 
-## Shortcuts for frequently visited paths.
-RLOG="$DB/Notes/current"
-alias scripts="cd $HOME/scripts"
+RLOG="$DB/notes/current"
 alias rdir="cd $RLOG"
 
-## shortcuts for common
-alias bp="vi $BP" 
-alias sbp=". $BP"
-alias brc="vi $BRC" 
-alias sbrc=". $BRC"
-# os x
 alias pbc="pwd | tr -d '\n' | pbcopy"
-# ubuntu
 alias lpbc="pwd | xclip"
 alias cb="xclip -o"
 alias ip="ifconfig | grep inet"
 alias vm5="amixer -q sset Master 5%-"
 alias vp5="amixer -q sset Master 5%+"
 
-# query network
 alias ntwk="sudo arp-scan --interface=en0 --localnet"
-
-# beep
-alias vsp="ssh -Y kmckiern@vsp-compute-01.stanford.edu"
-alias sher="ssh -Y kmckiern@sherlock.stanford.edu"
-alias xs="ssh -Y kmckiern@xstream-login.stanford.edu"
-
 alias rs="rsync -avzh"
-# throttle rsync on both sides of a larger transfer
 alias bkrs="nice -n19 rsync --rsync-path=\"nice -n19 rsync\" -avzh"
-
-# queueue
-alias sq="squeue -l | grep kmck"
-alias jerb="PBSCheck.py nodes | grep kmck"
-
-## Start programs via CL
-alias vmd="/Applications/VMD\ 1.9.1.app/Contents/MacOS/startup.command"
