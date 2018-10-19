@@ -1,4 +1,3 @@
-# stolen from jason
 now() {
   echo $(date +"%Y.%m.%d-%H.%M.%S")
 }
@@ -8,8 +7,3 @@ fnd() {
     find . -iname "*$ARGS*"
 }
 
-gp() {
-    FILE=$1
-    MSG=$2
-    git add "$FILE" && git commit -m "$MSG" && git push origin master
-}
