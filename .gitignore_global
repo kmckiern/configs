@@ -22,7 +22,9 @@ wheels/
 *.egg
 MANIFEST
 .idea/
+.idea
 .DS_Store
+.DS_Store?
 
 *.manifest
 *.spec
