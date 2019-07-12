@@ -1,4 +1,4 @@
-export CONDA=$HOME/anaconda/bin
+export CONDA=$HOME/miniconda3/bin
 export PATH=$CONDA:$PATH
 
 if [ -f ~/.dircolors ]; then
