@@ -13,10 +13,6 @@ if [ -f ~/.functions ]; then
     source ~/.functions
 fi
 
-if [ -f ~/.bash_profile ]; then
-    . ~/.bash_profile
-fi
-
 # Prevent ^C from being echoed to the terminal when Ctrl+C is pressed.
 stty -ctlecho
 # CL vi
