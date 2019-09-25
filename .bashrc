@@ -84,3 +84,5 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+
+export CLICOLOR=1
