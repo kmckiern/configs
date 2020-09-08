@@ -1,4 +1,4 @@
-export CONDA=$HOME/anaconda/bin
+export CONDA=$HOME/miniconda3/bin
 export PATH=$CONDA:$PATH
 
 if [ -f ~/.dircolors ]; then
@@ -11,10 +11,6 @@ fi
 
 if [ -f ~/.functions ]; then
     source ~/.functions
-fi
-
-if [ -f ~/.bash_profile ]; then
-    . ~/.bash_profile
 fi
 
 # Prevent ^C from being echoed to the terminal when Ctrl+C is pressed.
@@ -84,3 +80,5 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+
+export CLICOLOR=1
