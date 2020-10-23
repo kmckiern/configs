@@ -1,5 +1,4 @@
-export CONDA=$HOME/miniconda3/bin
-export PATH=$CONDA:$PATH
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 if [ -f ~/.dircolors ]; then
     dircolors -b ~/.dircolors
@@ -66,7 +65,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-        PS1="\[\033[0;34m\]\\h \W\$ \[\033[0m\]"
+        PS1="\[\033[0;31m\]\\h \W\$ \[\033[0m\]"
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
